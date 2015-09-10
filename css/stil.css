@@ -1,0 +1,586 @@
+@font-face {
+  font-family: "Raleway-ExtraLight";
+  src:url(../fonts/Raleway-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Raleway-Medium";
+  src:url(../fonts/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: ailerons;
+    src: url(../fonts/Ailerons.ttf);
+}
+body{
+	width: 100%;
+	height: 100%;
+	overflow-x:hidden;
+	font-family: "Raleway-Medium";
+}
+
+.header-fixed {
+  background-color:white;
+  box-shadow:0 1px 1px #ccc;
+  padding: 20px 40px;
+  height: 80px;
+  color: black;
+  box-sizing: border-box;
+  top:-100px;
+z-index: 9999;
+  -webkit-transition:top 0.3s;
+  transition:top 0.3s;
+
+
+   border-color: #ffffff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3);
+  
+}
+
+.header-fixed .header-limiter {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*  The header placeholder. It is displayed when the header is fixed to the top of the
+  browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+  height: 80px;
+  display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+  float: left;
+  font: 28px ;
+  line-height: 40px;
+
+  margin: 0;
+}
+.header-fixed  img {
+  float: left;
+  margin-right: 10px;
+}
+.header-fixed .header-limiter h1  {
+  color: #5383d3;
+}
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+  color: #60D394;
+  text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+  font-size:18px;
+  line-height: 40px;
+  float: right;
+  border: none!important;
+    box-shadow: none;
+}
+
+.header-fixed .header-limiter nav a{
+  display: inline-block;
+  padding: 0 5px;
+
+  text-decoration:none;
+  color: #60D394;
+  opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.header-fixed .header-limiter nav a.selected {
+  color: #608bd2;
+  
+  opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+  padding: 10px 40px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+ 
+  z-index: 999;
+
+}
+
+body.fixed .header-fixed-placeholder {
+  display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+body.fixed .header-fixed  img {
+  margin-top: -5px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+  line-height: 28px;
+  font-size: 16px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+  .header-fixed {
+    padding: 20px 0;
+    height: 80px;
+  }
+
+  .header-fixed .header-limiter h1 {
+    float: none;
+    margin: -8px 0 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .header-fixed .header-limiter nav {
+    line-height: 1;
+    float:none;
+  }
+
+  .header-fixed .header-limiter nav a {
+    font-size: 13px;
+  }
+
+  body.fixed .header-fixed {
+    display: none;
+  }
+
+}
+
+
+
+.col-center{
+  margin:0 auto;
+}
+.center {
+	text-align: center;
+}
+
+
+.naslovna{
+
+	height: 650px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	background-image: url("../img/download.jpg");
+	background-size:100% auto;
+	background-repeat:no-repeat;
+}
+.tekst{
+	margin-top: 325px;
+	width: 100%;
+	height:70px;
+	background-color: #1CBB9D;	
+	opacity: 0.6;
+	color: white;
+	vertical-align: middle;
+	font-family: ailerons;
+	
+}
+.tekst2{
+	margin-top: 325px;
+	width: 100%;
+	height:70px;
+	background-color: #1CBB9D;	
+	
+	color: white;
+	vertical-align: middle;
+	font-family: ailerons;
+	
+}
+.tekst h1{
+	font-size: 50px;
+}
+.opis h1{
+  margin-top: 50px;
+}
+
+.dodaj {
+
+	min-height: 250px;
+	width: 100%;
+	background-color: #ffd97d;
+	color: white;
+	
+	font-family: "Raleway-Medium";
+ 
+}
+.dodaj h1{
+	margin-top: 30px;
+	font-family: "Raleway-ExtraLight";
+
+
+}
+.polaroid{
+	margin-left: 100px;
+}
+.poruka {
+	color:#FF9B85;
+}
+
+
+
+.opis {
+	background-color: white;
+	min-height: 150px;
+	margin-top: 50px;
+	margin-bottom: 80px;
+	font-family: "Raleway-ExtraLight";
+}
+.video-section {
+	height: 400px;
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+
+}
+.video-section h1{
+font-size:40px;
+
+
+
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+.galerija{
+
+	font-family: "Raleway-ExtraLight";
+	min-height: 300px;
+}
+.galerija h1{
+  margin-top: 50px;
+}
+.slike {
+	margin-bottom:55px;
+
+	
+}
+
+.zanimljivosti{
+	background-color: #ECF0F1;
+	min-height: 400px;
+}
+.zanimljivosti h1{
+	font-family: "Raleway-ExtraLight";
+  margin-top: 50px;
+
+}
+.zanimljivo{
+	margin-top: 50px;
+	margin-left: 50px;
+	min-width: 150px;
+	min-height: 250px;
+	background-color: white;
+	font-family: "Raleway-Medium";
+
+}
+
+
+
+.video h1{
+	font-family: "Raleway-ExtraLight";
+  margin-top: 50px;
+}
+/* End defaults*/
+.zanimljivo {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    background: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #272727;
+    border-radius: 2px;
+  }
+  .zanimljivo .naslov {
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .zanimljivo .sadrzaj {
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px;
+  }
+  .zanimljivo p {
+    margin: 0;
+  }
+  .zanimljivo .vise {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    
+    margin-bottom: -15px;
+  }
+  .zanimljivo a {
+    color: #ee6055;
+    margin-right: 20px;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .zanimljivo .slika {
+    position: relative;
+  }
+  .zanimljivo .slika img {
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .zanimljivo .slika .naslov {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    color: #FFF;
+  }
+.podnozje {
+	background-color:#050404;
+	min-height: 150px;
+}
+.podnozje p {
+	margin-top:20px;
+	text-align: center;
+	color:#FFD97D;
+	font-family: "Raleway-ExtraLight";
+}
+/*.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 500px; }
+
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; }
+  .parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transform: translateX(-50%); }*/
+.main {
+
+
+width: 450px;
+height:530px;
+border: 2px solid gray;
+border-radius: 10px;
+}
+.main label{
+color: rgba(0, 0, 0, 0.71);
+margin-left: 60px;
+}
+#image_preview{
+
+font-size: 30px;
+margin-top: 50px;
+margin-left: 50px;
+width: 250px;
+height: 200px;
+text-align: center;
+line-height: 180px;
+font-weight: bold;
+color: #C0C0C0;
+background-color: #FFFFFF;
+overflow: auto;
+}
+#selectImage{
+
+
+
+width: 200px;
+
+}
+
+#file {
+color: #C75C5C;
+padding: 5px;
+margin-top: 10px;
+margin-left: 15%;
+width: 100%;
+}
+#message{
+ text-align: center;
+
+}
+#success
+{
+color:#2BBAAC;
+}
+#invalid
+{
+color:#C75C5C;
+}
+#line
+{
+
+}
+#error
+{
+color:#C75C5C;
+}
+#error_message
+{
+color:white;
+}
+#loading
+{
+display:none;
+font-size:25px;
+}
+.skupa{
+	margin-bottom: 50px;
+}
+.skupa form{
+	
+  text-align: center;
+  margin-bottom: 20px;
+}
+.parkovi h1{
+	font-family: "Raleway-ExtraLight";
+}
+.parkovi li{
+	font-family: "Raleway-ExtraLight";
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+.parkovi p{
+	font-family: "Raleway-Medium";
+	font-size: 15px;
+}
+#bookmarkRibbon{
+     width: 0; 
+     height: 60px; 
+     border-right: 30px solid #FFD97D;
+     border-left: 30px solid #FFD97D;
+     border-bottom: 18px solid transparent;
+    		display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+ #triangle-down { width: 0; 
+ 	height: 0; 
+ 	border-left: 60px solid transparent;
+ 	 border-right: 60px solid transparent; 
+ 	 border-top: 80px solid white;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+ 	  }
+  #triangle-down2 { width: 0; 
+ 	height: 0; 
+ 	border-left: 60px solid transparent;
+ 	 border-right: 60px solid transparent; 
+ 	 border-top: 80px solid #FFD97D;
+		display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 	  }
+    #con_map{
+      width: 100%;
+      height: 100%;
+
+    }
+       #map {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+   #map_canvas_2 {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+               #map_canvas_3  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+               #map_canvas_4  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+               #map_canvas_5  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+             #map_canvas_6  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+                 #map_canvas_7 {
+        position: relative;
+               width: 1250px;
+                height: 250px;
+            }
+                        #map_canvas_8  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+               #map_canvas_9  {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+               #map_canvas_10 {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+             #map_canvas_11 {
+        position: relative;
+                width: 1250px;
+                height: 250px;
+            }
+                 #map_canvas_12 {
+        position: relative;
+               width: 1250px;
+                height: 250px;
+            }
